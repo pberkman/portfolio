@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Patty Berkman</title>
 	<link rel="stylesheet" href="portfolio.css"/>
-	<link href='http://fonts.googleapis.com/css?family=Lekton:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 	<nav>
@@ -28,7 +28,7 @@
 			<div class="rows row1"></div>
 			<div class="rows row2">
 				<div id="learnWrapper" class="inline-block">
-					<div id="learn" class="headerBox inline-block">current areas of learning</div>
+					<div id="learn" class="headerBox inline-block">learning</div>
 					<p class="inline-block learnInfo profileInfo">Ruby on Rails, PHP, SASS and UX Design</p>
 				</div>
 				<div id="skillsWrapper" class="inline-block">
@@ -42,11 +42,20 @@
 					<div id="skills" class="headerBox inline-block">skills</div>
 				</div>
 			</div>
-			<div id="interestsWrapper">
-				<div id="interest" class="boxSize">interests</div>
+			<div class="rows row3">
+				<div id="interestsWrapper">
+					<div id="interest" class="headerBox inline-block">interests</div>
+					<p class="inline-block profileInfo interestInfo">hiking, quilting, upholstery, reading, baking, traveling, exploring new parks with my beagle, trying out new foods and restaurants.</p>
+				</div>
 			</div>
-			<div id="about" class="boxSize">about</div>
-			<div id ="resume" class="boxSize">resume</div>
+			<div class="rows row4">
+				<div id="about" class="inline-block headerBox">about</div>
+				<p id="about1stP" class="inline-block profileInfo aboutInfo">I am a customer service/sales manager turned front-end web developer living in Williamsburg, Virginia. What started as an inquisition into programming languages in order to gain more skills in sales report automation and industry analysis, quickly became an obsession for developing fun and interactive applications! </p>
+			</div>
+			<div class="rows row5">
+				<p id="about2ndP" class="inline-block profileInfo aboutInfo">I'm constantly learning and exploring new ways to increase my skills to enhance my work. I love  discovering a tool or technique and seeing it come to life in the project I am creating.</p>
+				<div id ="resume" class="headerBox inline-block">resume</div>
+			</div>
 		</section>
 		<section id="projects"><a name="projects"></a></section>
 		<section id="contact"><a name="contact"></a></section>
@@ -56,47 +65,4 @@
 
 
 
-		<!--	
-			<table>
-				<tr></tr>
-				<tr>
-					<td id="learn" class="profileHeader">current areas of learning</td>
-					<td class="fiveBoxes profileInfo">Ruby on Rails, PHP, SASS and UX Design</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td class="fiveBoxes profileInfo" id="skillsList">
-						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>jQuery</li>
-							<li>Javascript</li>
-							<li>AJAX</li>
-						</ul>
-					</td>
-					<td id="skills" class="profileHeader">skills</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td class="profileHeader" id="interests">interests</td>
-					<td class="threeBoxes"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
-
-
-
-
-			-->
+	
