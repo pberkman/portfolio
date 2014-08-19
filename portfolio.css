@@ -67,6 +67,8 @@ a:nth-child(4) {
 }
 #profile {
 	background-image:url("wireframe/background-profile.jpg");
+	margin:0;
+	padding:0;
 }
 #projects {
 	background-color: green;
@@ -83,13 +85,135 @@ a:visited {
 a:hover {
 	text-decoration: underline;
 }
-.boxSize {
-	width:144px;
-	height:144px;
+/*
+tr, td {
+	height:142px;
+	margin:0;
+	padding:0;
+}
+.profileHeader {
+	width:142px;
+	text-align: center;
 	font-family: 'Great Vibes', cursive;
 }
 #skills {
+	font-size: 50px;
+}
+#learn {
+	font-size: 35px;
+}
+#interests {
 	font-size: 40px;
-	text-align: center;
+}
+/*.fiveBoxes {
+	width:715px;
+	height:142px;
+}
+
+
+
+ul {
+	text-align: right;
+	padding-right: 10px;
+}
+.profileInfo {
+	font-family:'Pathway Gothic One', sans-serif;
+	font-size: 40px;
+}
+li {
+	display: inline-block;
+	list-style-type: circle; 
+	font-variant: small-caps;
+	font-size:35px;
+
+}
+li:before {
+	content: url("wireframe/bullet.jpg");
+	padding:10px;
+}
+#skillsList {
+	display: none;
+}
+#skills {
+	font-size: 50px;
 	line-height: 144px;
 }
+ul {
+	width:720px;
+	margin:0;
+	padding:0;
+	text-align: right;
+}
+
+.inline-block li {
+	display: inline-block;
+	list-style-type: circle; 
+	font-variant: small-caps;
+	font-family:'Pathway Gothic One', sans-serif;
+	font-size:35px;
+}
+
+.row2 {
+	display: inline-block;
+}
+#learn {
+	font-size: 30px;
+	float:left;
+}
+
+*/
+
+.rows {
+	height:144px;
+	margin:0;
+	padding:0;
+}
+/*Styling for all profile area selectors*/
+.headerBox {
+	width:144px;
+	height:144px;
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+}
+/* Individial styling for each profile area selector */
+#learn {
+	font-size: 35px;
+	top:70px;
+}
+#skills {
+	line-height: 140px;
+}
+.inline-block {
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+/* Skills list*/
+li {
+	display: inline-block;
+	font-variant: small-caps;
+	font-size:35px;
+}
+li:before {
+	content: url("wireframe/bullet.jpg");
+	padding:10px;
+
+}
+
+/* Styling for all profile information*/
+.profileInfo {
+	font-family:'Pathway Gothic One', sans-serif;	
+}
+
+/* Styling for individual profile information*/
+.learnInfo {
+	font-size:45px;
+	width:715px;
+	text-align: left;
+}
+.skillsInfo {
+	display: none;
+	width:715px;
+	text-align: right;
+}
+
