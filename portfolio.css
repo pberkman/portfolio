@@ -3,7 +3,8 @@ html {
 	height: 100%;
 	width:100%;
 	padding:0;
-	margin:0;
+	margin:0 auto;
+
 }
 nav {
 	position: fixed;
@@ -13,12 +14,15 @@ nav {
 	text-align: right;
 	padding-top:10px;
 	top:10px;
+	max-width: 1500px;
 }
 section {
+
 	height:700px;
 	width:100%;
 	padding:0 0 5px 0;
 	margin:0;
+	min-width: 1010px;
 }
 .navItems {
 	display: inline-block;
@@ -48,31 +52,36 @@ a:nth-child(4) {
 	font-family:'Pathway Gothic One', sans-serif;
 }
 #home h1 {
-	padding-top:150px;
+
 	font-variant: small-caps;
 	font-size:100px;
 	letter-spacing: 5px;
 	margin:0 0 10px 30px;
 }
+.clearNav {
+	padding-top:150px;
+}
 #home p {
 	font-size: 40px;
 	margin:0 0 10px 30px;
 }
-.homePic {
+.homePic img {
 	height:350px;
 	width:350px;
 	border-radius:50%;
 	background-color: #444444;
 	float:right;
 	margin-top:-60px;
-	margin-right:70px;
+	margin-right:100px;
 }
 #profile {
 	background-image:url("wireframe/background-profile.jpg");
-
+	background-repeat: no-repeat;
 }
 #projects {
-	background-color: green;
+	background-image:url("wireframe/background-projects2.jpg");
+	height:auto;
+	background-repeat: no-repeat;
 }
 #contact {
 	background-color: yellow;
@@ -87,13 +96,14 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* PROFILE SECTION */
 .rows {
 	height:144px;
 	margin:0;
 	padding:0;
-
 }
-/*Styling for all profile area selectors*/
+
+/*Styling for all profile HEADERS */
 .headerBox {
 	width:144px;
 	height:144px;
@@ -102,25 +112,30 @@ a:hover {
 	font-size: 50px;
 	line-height: 144px;
 }
-.row3 {
-	margin-left:288px;
-}
-.row5 {
-	height: 120px;
-}
 .inline-block {
 	display:inline-block;
 	margin:0;
 	padding:0;
+	height:144px;
 }
-.row5 .headerBox {
-	line-height: 120px;
-}
-#about {
-	position: relative;
-	top:-30px;
+/* Styling for ALL profile INFO */
+.profileInfo {
+	font-family:'Pathway Gothic One', sans-serif;
+	display: none;
+	height:144px;
 }
 
+
+/* ---ROW 2 ---*/
+.row2 {
+	width:1008px;
+}
+.learnInfo {
+	font-size:45px;
+}
+#skillsWrapper {
+	float:right;
+}
 /* Skills list*/
 li {
 	display: inline-block;
@@ -133,42 +148,61 @@ li:before {
 
 }
 
-/* Styling for all profile information*/
-.profileInfo {
-	font-family:'Pathway Gothic One', sans-serif;
-	visibility: hidden;
-}
+/* ---ROW 3 ---*/
 
-/* Styling for individual profile information*/
-.learnInfo {
-	font-size:45px;
-	width:715px;
-	text-align: left;
+.row3 {
+	margin-left:288px;
 }
-.skillsInfo {
-
-	width:715px;
-	text-align: right;
+#interestsWrapper {
+	width: 576px;
 }
 .interestInfo {
-
-	width:432px;
+	width:399px;
 	font-size: 20px;
+	float:right;
 	text-align: center;
+	height:100px;
+	padding:35px 20px 0 0;
+	left:20px;
 }
-.aboutInfo {
 
-	width:432px;
+/* ---ROW 4 ---*/
+.aboutInfo {
+	width:430px;
 	font-size: 20px;
-	height: 144px;
 }
+
 #about1stP {
-	position: relative;
-	bottom:-15px;
+	display: none;
+	vertical-align: middle;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+/* ---ROW 5 ---*/
+.row5 {
+	height: 130px;
+	width: 576px;
 }
 #about2ndP {
 	text-align: center;
-	height:120px;
+	height:130px;
+	width: 425px;
+}
+.projRow {
+	width:100%;
+	margin:0 auto;
+	text-align: center;
 
 }
-
+.proj {
+	background-color: #403D36;
+	border:10px ridge #403D36;
+	width:35%;
+	height:300px;
+}
+#resume {
+	height:130px;
+	line-height: 130px;
+	float:right;
+}

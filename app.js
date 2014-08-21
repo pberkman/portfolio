@@ -2,13 +2,27 @@
 $(document).ready(function() {
 
 
-$('#learn').click(function() {
-	var learn = $(".learnInfo");
-  if (learn.css('visibility') == 'hidden') {
-    learn.css('visibility','visible');
-  } else {
-    learn.css('visibility','hidden');
-   }
-});
 
+	$('#learn, #skills, #interests').click(function() {
+		if ($(this).siblings().css('display') == 'none') {
+			$(".profileInfo").css('display','none');
+			$(this).siblings().css('display','inline-block');
+		}
+
+		else {
+			$(this).siblings().css('display','none');
+		}
+	});
+
+	$('#about').click(function() {
+		if ($(this).siblings().css('display') == 'none') {
+			$(".profileInfo").css('display','none');
+			$(this).siblings().css('display','inline-block');
+			$("#about2ndP").css('display','inline-block');
+		}
+
+		else {
+			$(this).siblings().css('display','none');
+		}
+	});
 }); //end ready
