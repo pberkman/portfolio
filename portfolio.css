@@ -48,7 +48,7 @@ a:hover {
 	font-size: 30px;
 }
 h1 {
-	font-size: 40px;
+	font-size: 50px;
 	text-shadow: 1px 1px 1px #000;
 	text-align: center;
 	margin:0 auto;
@@ -161,11 +161,11 @@ li:before {
 }
 .interestInfo {
 	width:399px;
-	font-size: 20px;
+	font-size: 25px;
 	float:right;
 	text-align: center;
 	height:100px;
-	padding:35px 20px 0 0;
+	padding:25px 20px 0 0;
 	left:20px;
 }
 
@@ -177,7 +177,7 @@ li:before {
 }
 #profile1stP {
 	display: none;
-	vertical-align: middle;
+	text-align: center;
 	line-height: 1.2em;
 	margin: 0;
 }
@@ -189,7 +189,7 @@ li:before {
 	width: 576px;
 }
 #profile2ndP {
-	text-align: center;
+vertical-align: middle;
 	height:130px;
 	width: 425px;
 }
@@ -198,6 +198,19 @@ li:before {
 	line-height: 130px;
 	float:right;
 }
+/* --- Call me Patty area --- */
+.about-instruct {
+	float:right;
+	margin-right:80px;
+	margin-top:100px;
+	text-align: center;
+	width:300px;
+}
+.about-instruct p {
+	font-size: 30px;
+	color:#F0565B;
+}
+
 
 /* ---PROJECT SECTION ---*/
 
@@ -223,19 +236,28 @@ li:before {
 	height:430px;
 }
 .projImage:hover {
-	opacity: 0.3;
-	filter: alpha(opacity=40); /* For IE8 and earlier */
+	opacity: 0.1;
+	filter: alpha(opacity=10); /* For IE8 and earlier */
 }
 .projHover {
 	display:none;
 	text-shadow: 1px 1px 1px #000;
 	margin-top: -300px;
+	margin-left:10px;
 	color:white;
 	font-size: 50px;
 	width:680px;
 	height:430px;
 }
- 
+.instaFont {
+	font-family: 'Qwigley', cursive;
+}
+.movieSynopFont {
+	font-family: 'Limelight',cursive;	
+}
+ .shoppingFont {
+ 	font-family: Impact,sans-serif;
+ }
 
 /* ---CONTACT SECTION ---*/
 #contact {

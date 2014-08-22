@@ -27,9 +27,12 @@ $(document).ready(function() {
 
 	});
 
-	$(".projImage").hover(function() {
-		$(".projHover").show();
-
+	$(".proj").mouseenter(function() {
+		$(this).children(".projHover").show();
+	})
+		.mouseleave(function() {
+		$(this).children(".projHover").hide();
 	});
+
 
 }); //end ready
