@@ -6,33 +6,35 @@
 	<link rel="stylesheet" href="portfolio.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 	<nav>
-		<a href="#home" class="navItems">home</a>
-		<a href="#profile" class="navItems">profile</a>
-		<a href="#projects" class="navItems">projects</a>			
-		<a href="#contact" class="navItems">contact</a>
+		<a href="#home" class="navItems greatVibesFont">home</a>
+		<a href="#about" class="navItems greatVibesFont">about</a>
+		<a href="#projects" class="navItems greatVibesFont">projects</a>			
+		<a href="#contact" class="navItems greatVibesFont">contact</a>
 	</nav>
 	<div class="content-wrapper">
 		<section id="home">
-			<h1 class="clearNav">Patricia Berkman</h1>
-			<p>Front-end web developer || Customer service guru</p>
-			<p id="location"> Williamsburg, VA</p>
-			<div class="homePic"><img src="selfPhoto.jpg" alt="Profile Image"/></div>
+			<div class="NameContainer  inline-block">
+				<h1 class="clearNav">Patricia Berkman</h1>
+				<p>Front-end web developer || Customer service guru</p>
+				<p id="location" class="greatVibesFont"> Williamsburg, VA</p>
+			</div>
+			<div class="homePic"><img src="image/selfPhoto.jpg" alt="Profile Image"/></div>
 		</section>
-		<section id="profile"><a name="profile"></a>
+		<section id="about"><a name="about"></a>
 			<div class="rows row1"></div>
 			<div class="rows row2">
 				<div id="learnWrapper" class="inline-block">
 					<div id="learn" class="headerBox inline-block">learning</div>
-					<p class="inline-block learnInfo profileInfo">Ruby on Rails, PHP, SASS and UX Design</p>
+					<p class="inline-block learnInfo aboutInfo">Ruby on Rails, PHP, SASS and UX Design</p>
 				</div>
 				<div id="skillsWrapper" class="inline-block">
-					<ul class="inline-block skillsInfo profileInfo">
+					<ul class="inline-block skillsInfo aboutInfo">
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>jQuery</li>
@@ -45,31 +47,41 @@
 			<div class="rows row3">
 				<div id="interestsWrapper" class="inline-block">
 					<div id="interests" class="headerBox inline-block">interests</div>
-					<p class="inline-block profileInfo interestInfo">hiking, quilting, upholstery, reading, baking, traveling, exploring new parks with my beagle, trying out new foods and restaurants.</p>
+					<p class="inline-block aboutInfo interestInfo">hiking, quilting, upholstery, reading, baking, traveling, exploring new parks with my beagle, trying out new foods and restaurants.</p>
 				</div>
 			</div>
-				<div class="rows row4">
-					<div id="about" class="inline-block headerBox">about</div>
-					<p id="about1stP" class=" profileInfo aboutInfo">I am a customer service/sales manager turned front-end web developer living in Williamsburg, Virginia. What started as an inquisition into programming languages in order to gain more skills in sales report automation and industry analysis, quickly became an obsession for developing fun and interactive applications! </p>
-					
+			<div class="rows row4">
+				<div id="profile" class="inline-block headerBox">profile</div>
+				<p id="profile1stP" class=" aboutInfo profileInfo">I am a customer service/sales manager turned front-end web developer living in Williamsburg, Virginia. What started as an inquisition into programming languages in order to gain more skills in sales report automation and industry analysis, quickly became an obsession for developing fun and interactive applications! </p>
 			</div>
 			<div class="rows row5">
-				<p id="about2ndP" class="profileInfo aboutInfo inline-block">I'm constantly learning and exploring new ways to increase my skills to enhance my work. I love  discovering a tool or technique and seeing it come to life in the project I am creating.</p>
-				<div id ="resume" class="headerBox inline-block"><a href="resume_PatriciaBerkman.pdf" title="Click here for a printable PDF" target="_blank">resume</a></div>
+				<p id="profile2ndP" class="aboutInfo profileInfo inline-block">I'm constantly learning and exploring new ways to increase my skills to enhance my work. I love  discovering a tool or technique and seeing it come to life in the project I am creating.</p>
+				<div id ="resume" class="headerBox inline-block"><a href="links/resume_PatriciaBerkman.pdf" title="Click here for a printable PDF" target="_blank">resume</a></div>
 			</div>
 		</section>
 		<section id="projects"><a name="projects"></a>
-			<div class="projRow clearNav">
-				<div class="inline-block proj"></div>
-				<div class="inline-block proj"></div>
-			</div>
+			<h1 class="clearNav">Projects</h1>
 			<div class="projRow">
-				<div class="inline-block proj"></div>
-				<div class="inline-block proj"></div>
+				<div class="proj"><a href="http://pberkman.github.io/instaAlbum/" target="_blank" title="Click to access full app"><img src="image/instaAlbum Screenshot.png" class="projImage"/></a><p class="projHover">instaAlbum<br>An interactive way to create and look at albums using Instagram's API</p></div>
+				<div class="proj"><a href="http://pberkman.github.io/quizapp/" target="_blank" title="Click to access full app"><img src="image/moviesynop_screenshot.png" class="projImage"/></a></div>
+				<div class="proj"><a href="http://pberkman.github.io/shopping-list/" target="_blank" title="Click to access full app"><img src="image/shoppinglist_screenshot.png" class="projImage"/></a></div>
 			</div>
 		</section>
+		<section id="contact"><a name="contact"></a>
+			<h1 class="clearNav">Contact me</h1>
+			<p class="contactParagraph">If you would like to get in touch with me, or have questions, feel free to use any of the contact methods below.
+			<br><br>I'd love to chat with you!</p>
+			<p class="contactParagraph directContact"><span class="greatVibesFont">phone:</span> 978-319-0053 || <span class="greatVibesFont">email:</span> <a href="mailto:patriciaberkman@gmail.com">patriciaberkman@gmail.com</a></p>
+			<div class="media-wrapper">
+				<div><a href="https://www.linkedin.com/pub/patricia-berkman/32/1a9/40a" target="_blank" class="fa fa-linkedin"></a></div>
 
-		<section id="contact"><a name="contact"></a></section>
+				<div><a href="https://plus.google.com/108244217513309668263/about/p/pub" target="_blank" class="fa fa-google-plus"></a></div>
+
+				<div><a href="https://github.com/pberkman" target="_blank" class="fa fa-github"></a></div>
+
+				<div><a href="https://twitter.com/berkman_p" target="_blank" class="fa fa-twitter"></a></div>
+			</div>
+		</section>
 	</div>
 </body>
 </html>
