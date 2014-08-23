@@ -23,6 +23,7 @@ $(document).ready(function() {
 
 		else {
 			$(this).siblings().css('display','none');
+			$("#profile2ndP").css('display','none');
 		}
 
 	});
