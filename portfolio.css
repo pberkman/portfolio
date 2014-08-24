@@ -29,6 +29,7 @@ nav {
 }
 
 /* --- put some margin to the right of Contact in the Nav bar ---*/
+
 a:nth-child(4) {  
 	margin-right:20px;
 }
@@ -115,6 +116,10 @@ section {
 	font-size: 50px;
 	line-height: 144px;
 }
+.headerBox:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
 .inline-block {
 	display:inline-block;
 	margin:0;
@@ -136,7 +141,7 @@ section {
 .learnInfo {
 	font-size:45px;
 }
-#skillsWrapper {
+#learnWrapper {
 	float:right;
 }
 /* Skills list*/
@@ -172,11 +177,11 @@ li:before {
 /* ---ROW 4 ---*/
 
 .row4 {
-	width:576px;
+	width:720px;
 	margin:0;
 }
 .profileInfo {
-	width:430px;
+	width:574px;
 	font-size: 20px;
 	text-align: center;
 }
@@ -185,14 +190,13 @@ li:before {
 	height: 134px;
 	float:right;
 	margin:0;
-	padding-top: 10px;
 }
 
 /* ---ROW 5 ---*/
 
 .row5 {
 	height: 130px;
-	width: 580px;
+	width: 576px;
 }
 #profile2ndP {
 	height:130px;
@@ -206,8 +210,8 @@ li:before {
 /* --- Call me Patty area --- */
 .about-instruct {
 	float:right;
+	margin-top:-300px;
 	margin-right:80px;
-	margin-top:100px;
 	text-align: center;
 	width:300px;
 }
@@ -276,6 +280,9 @@ li:before {
 .directContact {
 	font-size: 1em;
 }
+.directContact a:hover {
+	color:blue;
+}
 .media-wrapper {
 	width:100%;
 	height:200px;
@@ -291,7 +298,7 @@ li:before {
 	padding:30px;
 	margin:10px;
 }
-.fa-linkedin, .fa-twitter {
+.fa-linkedin {
 	background-color: #73D4D1;
 }
 .fa-google-plus {
@@ -303,4 +310,7 @@ li:before {
 .fa:hover {
 	box-shadow: 5px 5px 5px #888888;
 	text-decoration: none;
+}
+.fa-twitter {
+background-color:#B0E7E5;
 }

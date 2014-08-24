@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 
 
-	$('#learn, #skills, #interests').click(function() {
+	$('#learn, #skills, #interests, #profile').click(function() {
 		if ($(this).siblings().css('display') == 'none') {
 			$(".aboutInfo").css('display','none');
 			$(this).siblings().css('display','inline-block');
@@ -14,19 +14,8 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#profile').click(function() {
-		if ($(this).siblings().css('display') == 'none') {
-			$(".aboutInfo").css('display','none');
-			$(this).siblings().css('display','inline-block');
-			$("#profile2ndP").css('display','inline-block');
-		}
 
-		else {
-			$(this).siblings().css('display','none');
-			$("#profile2ndP").css('display','none');
-		}
 
-	});
 
 	$(".proj").mouseenter(function() {
 		$(this).children(".projHover").show();
@@ -34,6 +23,8 @@ $(document).ready(function() {
 		.mouseleave(function() {
 		$(this).children(".projHover").hide();
 	});
+
+	window.location.hash = "#about";
 
 
 }); //end ready
