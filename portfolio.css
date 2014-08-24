@@ -1,24 +1,20 @@
 
-html {
-	height:100%;
-}
-
-body {
+html, body {
 	height: 100%;
 	width:100%;
 	padding:0;
 	margin:0 auto;
-	max-width: 1400px;
+	max-width: 1295px;
 }
 nav {
 	position: fixed;
 	background-color: #EF4036;
-	width:99%;
+	width:100%;
 	height:70px;
 	text-align: right;
 	padding-top:10px;
+	max-width: 1295px;
 	top:10px;
-	max-width: 1500px;
 }
 .navItems {
 	display: inline-block;
@@ -61,11 +57,11 @@ h1 {
 	padding-top:120px;
 }
 section {
-	height:100%;
-	min-height: 700px;
+	height:700px;
 	width:100%;
 	padding:0 0 5px 0;
 	margin:0;
+
 	min-width: 1010px;
 	font-family:'Pathway Gothic One', sans-serif;
 }
@@ -74,7 +70,6 @@ section {
 
 #home {
 	background: url("image/background-home.jpg");
-	background-size: auto;
 
 }
 #home h1 {
@@ -228,9 +223,8 @@ li:before {
 /* ---PROJECT SECTION ---*/
 
 #projects {
-	background-image:url("image/background-projects2.jpg");
-	height: 270%;
-	min-height:2000px;
+	background-image:url("image/background-projects_2.jpg");
+	height: 1720px;
 }
 .projRow {
 	text-align: center;
@@ -310,7 +304,7 @@ li:before {
 	background-color:#F0565B;
 }
 .fa-github {
-	background-color: #FDF2D7;
+	background-color: #fceabf;
 }
 .fa:hover {
 	box-shadow: 5px 5px 5px #888888;
