@@ -15,6 +15,8 @@ nav {
 	padding-top:10px;
 	max-width: 1295px;
 	top:10px;
+	box-shadow: 1px 1px 1px #000000;
+
 }
 .navItems {
 	display: inline-block;
@@ -23,15 +25,13 @@ nav {
 	height:50px;
 	border-radius:5px;
 	background-color:#EF4036;
-	box-shadow: 3px 3px 3px #000000;
+	box-shadow:3px 3px 3px #000000;
 	text-align: center;
+	cursor: pointer;	
 }
 
-/* --- put some margin to the right of Contact in the Nav bar ---*/
-
-a:nth-child(4) {  
-	margin-right:20px;
-}
+/*--- Link to Resume in "About" section and social media buttons in 
+	  contact section---*/
 a:link {
 	text-decoration: none;
 	color: #000000;
@@ -43,6 +43,7 @@ a:hover {
 	text-decoration: underline;
 	color:white;
 }
+
 .greatVibesFont {
 	font-family: 'Great Vibes', cursive;
 	font-size: 30px;
@@ -100,6 +101,12 @@ section {
 	background-image:url("image/background-profile.jpg");
 	background-repeat: no-repeat;
 }
+.inline-block {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	height:144px;
+}
 .rows {
 	height:144px;
 	margin:0;
@@ -119,30 +126,37 @@ section {
 	cursor: pointer;
 	text-decoration: underline;
 }
-.inline-block {
-	display:inline-block;
-	margin:0;
-	padding:0;
-	height:144px;
-}
-/* Styling for ALL about INFO */
+
+/* Styling for ALL about INFO (items that appear when header is clicked)*/
 .aboutInfo {
 	font-family:'Pathway Gothic One', sans-serif;
 	display: none;
 	height:144px;
 }
 
-/* ---ROW 2 ---*/
+/* ---Row 2 ---*/
 
 .row2 {
-	width:1008px;
+	width:1010px;
 }
-.learnInfo {
-	font-size:45px;
+#profileWrapper {
+	height:144px;
+	margin:0;
+	float: right;
 }
-#learnWrapper {
-	float:right;
+.profileInfo {
+	display: none;
+	height: 134px;
+	width:570px;
+	font-size: 20px;
+	text-align: center;
+	margin:0;
+	float: left;
 }
+#profile {
+	float: right;
+}
+
 /* Skills list*/
 li {
 	display: inline-block;
@@ -155,7 +169,7 @@ li:before {
 
 }
 
-/* ---ROW 3 ---*/
+/* ---Row 3 ---*/
 
 .row3 {
 	margin-left:288px;
@@ -173,39 +187,23 @@ li:before {
 	left:20px;
 }
 
-/* ---ROW 4 ---*/
+/* ---Row 4 ---*/
 
 .row4 {
 	width:720px;
 	margin:0;
 }
-.profileInfo {
-	width:574px;
-	font-size: 20px;
-	text-align: center;
-}
-#profile1stP {
-	display: none;
-	height: 134px;
-	float:right;
-	margin:0;
-}
 
-/* ---ROW 5 ---*/
-
-.row5 {
-	height: 130px;
-	width: 576px;
-}
-#profile2ndP {
-	height:130px;
-	width: 430px;
+.learnInfo {
+	font-size:32px;
+	width:425px;
 }
 #resume {
 	height:130px;
 	line-height: 130px;
 	float:right;
 }
+
 /* --- Call me Patty area --- */
 .about-instruct {
 	float:right;
@@ -219,29 +217,27 @@ li:before {
 	color:#F0565B;
 }
 
-
 /* ---PROJECT SECTION ---*/
 
 #projects {
 	background-image:url("image/background-projects_3.jpg");
-	height: 1720px;
+	height: 1147px;
 }
 .projRow {
 	text-align: center;
 }
 .proj {
-
 	background-color: #403D36;
 	border:10px ridge #403D36;
-	width:700px;
-	height:450px;
+	width:500px;
+	height:250px;
 	margin:10px auto;
 }
 .projImage {
 	margin-top:10px;
 	margin-left:10px;
-	width:680px;
-	height:430px;
+	width:480px;
+	height:230px;
 }
 .projImage:hover {
 	opacity: 0.1;
@@ -250,12 +246,12 @@ li:before {
 .projHover {
 	display:none;
 	text-shadow: 1px 1px 1px #000;
-	margin-top: -300px;
+	margin-top: -175px;
 	margin-left:10px;
 	color:white;
-	font-size: 50px;
-	width:680px;
-	height:430px;
+	font-size: 30px;
+	width:480px;
+	height:230px;
 }
 .instaFont {
 	font-family: 'Qwigley', cursive;
@@ -297,6 +293,10 @@ li:before {
 	padding:30px;
 	margin:10px;
 }
+.fa:hover {
+	box-shadow: 5px 5px 5px #888888;
+	text-decoration: none;
+}
 .fa-linkedin {
 	background-color: #73D4D1;
 }
@@ -305,10 +305,6 @@ li:before {
 }
 .fa-github {
 	background-color: #fceabf;
-}
-.fa:hover {
-	box-shadow: 5px 5px 5px #888888;
-	text-decoration: none;
 }
 .fa-twitter {
 background-color:#B0E7E5;
