@@ -266,6 +266,7 @@ section {
 
 #projects {
 	background-image:url("image/background-projects_3.jpg");
+	-moz-background-image:url("image/background-projects_3_chffie.jpg");
 	height:1147px;
 }
 .projRow {
