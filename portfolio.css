@@ -29,7 +29,9 @@ nav {
 	text-align: center;
 	cursor: pointer;	
 }
-
+.linkStyle {
+	color:white;
+}
 /*--- Link to Resume in "About" section and social media buttons in 
 	  contact section---*/
 a:link {
