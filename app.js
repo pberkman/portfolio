@@ -33,4 +33,11 @@ $(document).ready(function() {
 		$('#contact').ScrollTo();
 	});
 
+	$('.navItems').mouseenter(function() {
+		$(this).css('color', 'white');
+	})
+	.mouseleave(function() {
+		$(this).css('color', '#000000');
+	});
+
 }); //end ready
