@@ -1,4 +1,3 @@
-//notes on how to switch between visible and hidden for profile info
 $(document).ready(function() {
 	
 	// About section - click each header to make their info appear and disappear
