@@ -1,33 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 
 
 html, body {
@@ -74,9 +45,7 @@ a {
 	width:120px;
 	padding:5px;
 }
-a:hover {
-	color:white;
-}
+
 a:link {
 	text-decoration: none;
 	color: #000000;
@@ -142,11 +111,11 @@ section {
 	background-image:url("image/background-profile.jpg");
 	background-repeat: no-repeat;
 }
-#skillsWrapper, #profileWrapper, #interestsWrapper, #learnWrapper {
-	display:inline-block;
-}
+
 .rows {
 	height:144px;
+	margin:0;
+	padding:0;
 }
 
 /*Styling for all profile HEADERS */
@@ -157,7 +126,7 @@ section {
 	font-family: 'Great Vibes', cursive;
 	font-size: 50px;
 	line-height: 144px;
-	display:inline-block;
+	display: inline-block;
 }
 .headerBox:hover {
 	cursor: pointer;
@@ -176,7 +145,10 @@ section {
 .row2 {
 	width:1010px;
 }
+
 #profileWrapper {
+	height:144px;
+	margin:0;
 	float: right;
 }
 .profileInfo {
@@ -185,10 +157,14 @@ section {
 	width:570px;
 	font-size: 20px;
 	text-align: center;
+	margin:0;
 	float: left;
 }
 #profile {
 	float: right;
+}
+#skills {
+	display: inherit;
 }
 
 /* Skills list*/
@@ -197,9 +173,10 @@ section {
 	font-variant: small-caps;
 	font-size:35px;
 }
-.skillsInfo li:before { /* Yellow Bullets between skills */
+.skillsInfo li:before {
 	content: url("image/bullet.jpg");
 	padding:10px;
+
 }
 
 /* ---Row 3 ---*/
@@ -224,6 +201,7 @@ section {
 
 .row4 {
 	width:720px;
+	margin:0;
 }
 
 .learnInfo {
@@ -253,7 +231,6 @@ section {
 
 #projects {
 	background-image:url("image/background-projects_3.jpg");
-	height:1147px;
 }
 .projRow {
 	text-align: center;
@@ -285,8 +262,6 @@ section {
 	width:480px;
 	height:230px;
 }
-
-/* Fonts for project names */
 .instaFont {
 	font-family: 'Qwigley', cursive;
 }

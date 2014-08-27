@@ -20,7 +20,7 @@ $(document).ready(function() {
 		$(this).children(".projHover").hide();
 	});
 
-	$('ul a').mouseenter(function() {
+	$('a').mouseenter(function() {
 		$(this).css('color', 'white');
 	})
 	.mouseleave(function() {
