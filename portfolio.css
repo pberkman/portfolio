@@ -47,7 +47,7 @@ nav {
 	padding-top:10px;
 	max-width: 1295px;
 	top:10px;
-	box-shadow: 1px 1px 1px #000000;
+	border-bottom: 1px solid #333333;
 }
 ul {
 	margin:0;
@@ -60,7 +60,8 @@ ul {
 	line-height: 50px;
 	border-radius:5px;
 	background-color:#EF4036;
-	box-shadow:3px 3px 3px #000000;
+	border-right: 2px solid #333333;
+	border-bottom: 2px solid #333333;
 	text-align: center;
 	list-style: none;
 	cursor: pointer;
@@ -74,15 +75,13 @@ a {
 	width:120px;
 	padding:5px;
 }
-a:hover {
-	color:white;
-}
+
 a:link {
 	text-decoration: none;
-	color: #000000;
+	color:#000000;
 }
 a:visited {
-	color:#000000;
+	color:inherit;
 }
 
 .greatVibesFont {
@@ -309,7 +308,7 @@ section {
 .directContact {
 	font-size: 1em;
 }
-.directContact a:hover {
+#hover:hover {
 	color:blue;
 }
 .directContact a:link {
@@ -333,6 +332,7 @@ section {
 .fa:hover {
 	box-shadow: 5px 5px 5px #888888;
 	text-decoration: none;
+	color:white;
 }
 .fa-linkedin {
 	background-color: #73D4D1;

@@ -20,12 +20,13 @@ $(document).ready(function() {
 		$(this).children(".projHover").hide();
 	});
 
-	$('a').mouseenter(function() {
+	$('.navItems a, #resume a').mouseenter(function() {
 		$(this).css('color', 'white');
 	})
 	.mouseleave(function() {
 		$(this).css('color', '#000000');
 	});
+
 
 	// Scroll to each section
 	$("nav a").click(function(evn) {
