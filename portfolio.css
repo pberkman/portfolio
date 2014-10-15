@@ -99,13 +99,12 @@ section {
 #home {
 	text-align: center;
 	background: url("image/background-home.jpg");
-	background-size: 100%, 100%;
-	background-repeat: repeat;
+	background-size: cover;
+
 }
 
 #home h1 {
 	font-variant: small-caps;
-
 	/*margin:0 0 10px 30px;*/
 	text-align: center;
 }
@@ -114,7 +113,6 @@ section {
 	/*margin:0 0 10px 30px;*/
 }
 .homePic  {
-	
 	/*margin-right: 100px;*/
 	height:100%;
 	width:100%;
@@ -122,27 +120,28 @@ section {
 	/*margin-top: -100px;*/
 }
 
-/* ABOUT SECTION */
+/***********************
+--- ABOUT SECTION ---
+***********************/
 
 #about {
 	background-image:url("image/background-profile.jpg");
-	background-repeat: no-repeat;
+	background-size: cover;
+
 }
 #skillsWrapper, #profileWrapper, #interestsWrapper, #learnWrapper {
 	display:inline-block;
 }
 .rows {
-	height:144px;
+	height:20%;
 }
 
 /*Styling for all profile HEADERS */
 .headerBox {
-	width:144px;
-	height:144px;
+	height:20%;
 	text-align: center;
 	font-family: 'Great Vibes', cursive;
-	font-size: 50px;
-	line-height: 144px;
+	font-size: 1.5em;
 	display:inline-block;
 }
 .headerBox:hover {
@@ -154,22 +153,22 @@ section {
 .aboutInfo {
 	font-family:'Pathway Gothic One', sans-serif;
 	display: none;
-	height:144px;
+	height:20%;
 }
 
 /* ---Row 2 ---*/
 
 .row2 {
-	width:1010px;
+	left:80%;
 }
 #profileWrapper {
 	float: right;
 }
 .profileInfo {
 	display: none;
-	height: 134px;
-	width:570px;
-	font-size: 20px;
+	height: 20%;
+	width:60%;
+	font-size: 1em;
 	text-align: center;
 	float: left;
 }
@@ -181,57 +180,54 @@ section {
 .skillsInfo li {
 	display: inline-block;
 	font-variant: small-caps;
-	font-size:35px;
+	font-size:1em;
 }
 .skillsInfo li:before { /* Yellow Bullets between skills */
-	content: url("image/bullet.jpg");
-	padding:10px;
+	display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px 0 5px;
+    content: "";
+    background: url("image/bullet.jpg") no-repeat 0 0;
+    background-size: 100%;
 }
 
 /* ---Row 3 ---*/
 
 .row3 {
-	margin-left:288px;
+	margin-left:40%;
 }
 #interestsWrapper {
-	width: 576px;
+	width: 60%;
 }
 .interestInfo {
-	width:399px;
-	font-size: 25px;
+	width:60%
+	font-size: 1em;
 	float:right;
 	text-align: center;
-	height:100px;
-	padding:25px 20px 0 0;
-	left:20px;
 }
 
 /* ---Row 4 ---*/
 
 .row4 {
-	width:720px;
+	width:80%;
 }
 
 .learnInfo {
-	font-size:22px;
-	width:425px;
+	width:60%;
 }
 #resume {
-	height:130px;
-	line-height: 130px;
 	float:right;
 }
 
 /* --- Call me Patty area --- */
 .about-instruct {
+	display: none;
 	float:right;
-	margin-top:-350px;
-	margin-right:80px;
 	text-align: center;
 	width:300px;
 }
 .about-instruct p {
-	font-size: 30px;
 	color:#F0565B;
 }
 
@@ -239,23 +235,21 @@ section {
 
 #projects {
 	background-image:url("image/background-projects_3.jpg");
-	height:1147px;
+	background-size: cover;
 }
 .projRow {
 	text-align: center;
 }
 .proj {
 	background-color: #403D36;
-	border:10px ridge #403D36;
-	width:500px;
-	height:250px;
-	margin:10px auto;
+	border:2% ridge #403D36;
+	width:80%;
+	margin:2% auto;
 }
 .projImage {
-	margin-top:10px;
-	margin-left:5px;
-	width:480px;
-	height:230px;
+	
+	width:95%;
+	height:95%;
 }
 .projImage:hover {
 	opacity: 0.1;
@@ -288,8 +282,8 @@ section {
 	text-align: center;
 }
 .contactParagraph {
-	width:50%;
-	font-size: 2em;
+	width:90%;
+	font-size: 1.3em;
 	margin:0 auto;
 }
 .directContact {
@@ -303,8 +297,8 @@ section {
 }
 .media-wrapper {
 	width:100%;
-	height:200px;
-	margin-top: 40px;
+	height:10%;
+	margin-top: 4%;
 }
 .media-wrapper div {
 	display: inline-block;
@@ -312,9 +306,9 @@ section {
 .fa {
 	width:auto;
 	height:auto;
-	font-size: 100px;
-	padding:30px;
-	margin:10px;
+	font-size:3em;
+	margin:5px;
+	padding:15%;
 }
 .fa:hover {
 	box-shadow: 5px 5px 5px #888888;
