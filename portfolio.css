@@ -97,20 +97,20 @@ section {
 ***********************/
 
 #home {
+	text-align: center;
 	background: url("image/background-home.jpg");
-	background-size: 100%;
+	background-size: 100%, 100%;
 	background-repeat: repeat;
 }
 
 #home h1 {
 	font-variant: small-caps;
-	font-size:100px;
-	letter-spacing: 5px;
+
 	/*margin:0 0 10px 30px;*/
-	text-align: left;
+	text-align: center;
 }
 #home p {
-	font-size: 40px;
+	font-size: 1em;
 	/*margin:0 0 10px 30px;*/
 }
 .homePic  {
