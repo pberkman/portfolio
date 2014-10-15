@@ -236,6 +236,7 @@ section {
  ***********************/
 
 #projects {
+	height: auto;
 	min-height: 100%;
 	background-image:url("image/background-projects_3.jpg");
 	background-size: 100%, 100%;
