@@ -1,9 +1,16 @@
 @media screen and (min-width: 680px) {
 	.NameContainer {
-		width:60%;
+		width:50%;
+		font-size: 38px;
+		display: inline-block;
+	}
+	#home {
+		background-size: initial;
 	}
 	.ImageContainer {
 		float: right;
+		display: inline-block;
+		margin-top:10%;
 	}
 	.projImage:hover {
 		opacity: 0.1;
@@ -27,4 +34,5 @@
 		
 		text-align: center;
 	}
+
 }

@@ -126,12 +126,8 @@ section {
 /***********************
 --- ABOUT SECTION ---
 ***********************/
-
-#about {
-
-
-}
-.row {
+@media screen and (max-width:679px) {
+	.row {
 	height:20%;
 }
 
@@ -165,10 +161,10 @@ background-color:#B0E7E5;
 	font-family:'Pathway Gothic One', sans-serif;
 	display: none;
 }
-
-
-
-
+.skillsInfo li {
+	display: inline-block;
+	padding:5px;
+}
 
 /* --- Call me Patty area --- */
 .about-instruct {
@@ -179,12 +175,13 @@ background-color:#B0E7E5;
 .about-instruct p {
 	color:#F0565B;
 }
+
 /************************
  ---PROJECT SECTION ---
  ***********************/
 
 #projects {
-	height: auto;
+
 	min-height: 100%;
 	background-image:url("image/background-projects_3.jpg");
 	background-size: 100%, 100%;
@@ -218,6 +215,7 @@ background-color:#B0E7E5;
  	font-family: Impact,sans-serif;
  }
 
+}
 /************************
  ---CONTACT SECTION ---
  ***********************/
