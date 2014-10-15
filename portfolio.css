@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-
+@media screen and (max-width:680px) {
 html, body {
 	height: 100%;
 	width:100%;
@@ -126,19 +126,26 @@ section {
 /***********************
 --- ABOUT SECTION ---
 ***********************/
-@media screen and (max-width:679px) {
-	.row {
-	height:20%;
+#about {
+	min-height: 100%;
+	padding-top:10%;
 }
 
+.row2, .row4 {
+	height:40%;
+}
+
+.row3 {
+	height:20%;
+}
 /*Styling for all profile HEADERS */
 .headerBox {
 	font-family: 'Great Vibes', cursive;
 	font-size: 1.5em;
 	display: inline-block;
-	padding:9%;
 	width:100%;
 }
+
 .headerBox:hover {
 	cursor: pointer;
 	text-decoration: underline;
@@ -176,12 +183,12 @@ background-color:#B0E7E5;
 	color:#F0565B;
 }
 
+
 /************************
  ---PROJECT SECTION ---
  ***********************/
 
 #projects {
-
 	min-height: 100%;
 	background-image:url("image/background-projects_3.jpg");
 	background-size: 100%, 100%;
@@ -215,7 +222,7 @@ background-color:#B0E7E5;
  	font-family: Impact,sans-serif;
  }
 
-}
+
 /************************
  ---CONTACT SECTION ---
  ***********************/
@@ -266,5 +273,331 @@ background-color:#B0E7E5;
 	background-color: #fceabf;
 }
 .fa-twitter {
-background-color:#B0E7E5;
+	background-color:#B0E7E5;
+}
+}
+
+
+
+
+
+
+@media screen and (min-width:680px) {
+	html, body {
+		height: 100%;
+		width:100%;
+		padding:0;
+		margin:0 auto;
+		max-width: 1295px;
+		min-width: 1250px;
+	}
+	nav {
+		position: fixed;
+		background-color: #EF4036;
+		width:100%;
+		height:70px;
+		text-align: right;
+		padding-top:10px;
+		max-width: 1295px;
+		top:10px;
+		border-bottom: 1px solid #333333;
+	}
+	ul {
+		margin:0;
+	}
+	.navItems {
+		display: inline-block;
+		padding:5px;
+		width:120px;
+		height:50px;
+		line-height: 50px;
+		border-radius:5px;
+		background-color:#EF4036;
+		border-right: 2px solid #333333;
+		border-bottom: 2px solid #333333;
+		text-align: center;
+		list-style: none;
+		cursor: pointer;
+
+	}
+
+	/*--- Link to Resume in "About" section and social media buttons in 
+		  contact section---*/
+	a {
+		height:50px; 
+		width:120px;
+		padding:5px;
+	}
+
+	a:link {
+		text-decoration: none;
+		color:#000000;
+	}
+	a:visited {
+		color:inherit;
+	}
+
+	.greatVibesFont {
+		font-family: 'Great Vibes', cursive;
+		font-size: 30px;
+	}
+	h1 {
+		font-size: 50px;
+		text-shadow: 1px 1px 1px #000;
+		text-align: center;
+		margin:0 auto;
+	}
+	.clearNav {
+		padding-top:120px;
+	}
+	section {
+		height: 100%;
+		min-height:700px;
+		width:100%;
+		padding:0 0 5px 0;
+		margin:0;
+		min-width: 1010px;
+		font-family:'Pathway Gothic One', sans-serif;
+	}
+
+	/*---HOME SECTION ---*/
+
+	#home {
+		background: url("image/background-home.jpg");
+
+	}
+	#home h1 {
+		font-variant: small-caps;
+		font-size:100px;
+		letter-spacing: 5px;
+		margin:0 0 10px 30px;
+		text-align: left;
+	}
+	#home p {
+		font-size: 40px;
+		margin:0 0 10px 30px;
+	}
+	.homePic {
+		float: right;
+		margin-right: 100px;
+	}
+	.homePic  {
+		height:350px;
+		width:350px;
+		border-radius:50%;
+		margin-top: -100px;
+	}
+
+	/* ABOUT SECTION */
+
+	#about {
+		background-image:url("image/background-profile.jpg");
+		background-repeat: no-repeat;
+	}
+	#skillsWrapper, #profileWrapper, #interestsWrapper, #learnWrapper {
+		display:inline-block;
+	}
+	.rows {
+		height:144px;
+	}
+
+	/*Styling for all profile HEADERS */
+	.headerBox {
+		width:144px;
+		height:144px;
+		text-align: center;
+		font-family: 'Great Vibes', cursive;
+		font-size: 50px;
+		line-height: 144px;
+		display:inline-block;
+	}
+	.headerBox:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	/* Styling for ALL about INFO (items that appear when header is clicked)*/
+	.aboutInfo {
+		font-family:'Pathway Gothic One', sans-serif;
+		display: none;
+		height:144px;
+	}
+
+	/* ---Row 2 ---*/
+
+	.row2 {
+		width:1010px;
+	}
+	#profileWrapper {
+		float: right;
+	}
+	.profileInfo {
+		display: none;
+		height: 134px;
+		width:570px;
+		font-size: 20px;
+		text-align: center;
+		float: left;
+	}
+	#profile {
+		float: right;
+	}
+
+	/* Skills list*/
+	.skillsInfo li {
+		display: inline-block;
+		font-variant: small-caps;
+		font-size:35px;
+	}
+	.skillsInfo li:before { /* Yellow Bullets between skills */
+		content: url("image/bullet.jpg");
+		padding:10px;
+	}
+
+	/* ---Row 3 ---*/
+
+	.row3 {
+		margin-left:288px;
+	}
+	#interestsWrapper {
+		width: 576px;
+	}
+	.interestInfo {
+		width:399px;
+		font-size: 25px;
+		float:right;
+		text-align: center;
+		height:100px;
+		padding:25px 20px 0 0;
+		left:20px;
+	}
+
+	/* ---Row 4 ---*/
+
+	.row4 {
+		width:720px;
+	}
+
+	.learnInfo {
+		font-size:22px;
+		width:425px;
+	}
+	#resume {
+		height:130px;
+		line-height: 130px;
+		float:right;
+	}
+
+	/* --- Call me Patty area --- */
+	.about-instruct {
+		float:right;
+		margin-top:-350px;
+		margin-right:80px;
+		text-align: center;
+		width:300px;
+	}
+	.about-instruct p {
+		font-size: 30px;
+		color:#F0565B;
+	}
+
+	/* ---PROJECT SECTION ---*/
+
+	#projects {
+		background-image:url("image/background-projects_3.jpg");
+		height:1400px;
+	}
+	.projRow {
+		text-align: center;
+	}
+	.proj {
+		background-color: #403D36;
+		border:10px ridge #403D36;
+		width:500px;
+		height:250px;
+		margin:10px auto;
+	}
+	.projImage {
+		margin-top:10px;
+		margin-left:5px;
+		width:480px;
+		height:230px;
+	}
+	.projImage:hover {
+		opacity: 0.1;
+		filter: alpha(opacity=10); /* For IE8 and earlier */
+	}
+	.projHover {
+		display:none;
+		text-shadow: 1px 1px 1px #000;
+		margin-top: -175px;
+		margin-left:10px;
+		color:white;
+		font-size: 30px;
+		width:480px;
+		height:230px;
+	}
+
+	/* Fonts for project names */
+	.instaFont {
+		font-family: 'Qwigley', cursive;
+	}
+	.movieSynopFont {
+		font-family: 'Limelight',cursive;	
+	}
+	 .shoppingFont {
+	 	font-family: Impact,sans-serif;
+	 }
+
+	/* ---CONTACT SECTION ---*/
+	#contact {
+		text-align: center;
+	}
+	.contactParagraph {
+		width:50%;
+		font-size: 2em;
+		margin:0 auto;
+	}
+	.directContact {
+		font-size: 1em;
+	}
+	#hover:hover {
+		color:blue;
+	}
+	.directContact a:link {
+		text-decoration: underline;
+	}
+	.media-wrapper {
+		width:100%;
+		height:200px;
+		margin-top: 40px;
+	}
+	.media-wrapper div {
+		display: inline-block;
+	}
+	.fa {
+		width:auto;
+		height:auto;
+		font-size: 100px;
+		padding:30px;
+		margin:10px;
+	}
+	.fa:hover {
+		box-shadow: 5px 5px 5px #888888;
+		text-decoration: none;
+		color:white;
+	}
+	.fa-linkedin {
+		background-color: #73D4D1;
+	}
+	.fa-google-plus {
+		background-color:#F0565B;
+	}
+	.fa-github {
+		background-color: #fceabf;
+	}
+	.fa-twitter {
+		background-color:#B0E7E5;
+	}
+
 }
