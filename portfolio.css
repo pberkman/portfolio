@@ -87,7 +87,7 @@ h1 {
 section {
 	height: 100%;
 	width:100%;
-	padding:0 0 5px 0;
+
 	margin:0 auto;
 	font-family:'Pathway Gothic One', sans-serif;
 }
@@ -116,6 +116,8 @@ section {
 	/*margin-right: 100px;*/
 	height:100%;
 	width:100%;
+	max-width:350px;
+	max-height: 350px;
 	border-radius:50%;
 	/*margin-top: -100px;*/
 }
