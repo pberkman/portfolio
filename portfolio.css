@@ -270,8 +270,11 @@ section {
  	font-family: Impact,sans-serif;
  }
 
-/* ---CONTACT SECTION ---*/
+/************************
+ ---CONTACT SECTION ---
+ ***********************/
 #contact {
+	padding-top: 15%;
 	text-align: center;
 }
 .contactParagraph {
