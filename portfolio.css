@@ -233,6 +233,7 @@ section {
 /* ---PROJECT SECTION ---*/
 
 #projects {
+	height: 150%;
 	background-image:url("image/background-projects_3.jpg");
 	background-size: 100%, 100%;
 	background-repeat: repeat;
