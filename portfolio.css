@@ -243,6 +243,7 @@ section {
 	background-size: 100%, 100%;
 	background-repeat: repeat;
 	padding-bottom: 20%;
+	margin-bottom: 15%;
 }
 .projRow {
 	text-align: center;
@@ -274,7 +275,6 @@ section {
  ---CONTACT SECTION ---
  ***********************/
 #contact {
-	padding-top: 15%;
 	text-align: center;
 }
 .contactParagraph {
