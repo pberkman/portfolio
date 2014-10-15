@@ -112,6 +112,12 @@ section {
 	font-size: 1em;
 	/*margin:0 0 10px 30px;*/
 }
+.ImageContainer {
+	width:40%;
+
+	margin:0 auto;
+
+}
 .homePic  {
 	/*margin-right: 100px;*/
 	height:100%;
