@@ -253,20 +253,6 @@ section {
 	width:95%;
 	height:95%;
 }
-.projImage:hover {
-	opacity: 0.1;
-	filter: alpha(opacity=10); /* For IE8 and earlier */
-}
-.projHover {
-	display:none;
-	text-shadow: 1px 1px 1px #000;
-	margin-top: -175px;
-	margin-left:10px;
-	color:white;
-	font-size: 30px;
-	width:480px;
-	height:230px;
-}
 
 /* Fonts for project names */
 .instaFont {
