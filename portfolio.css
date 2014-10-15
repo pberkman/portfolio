@@ -225,7 +225,6 @@ section {
 	display: none;
 	float:right;
 	text-align: center;
-	width:300px;
 }
 .about-instruct p {
 	color:#F0565B;
@@ -235,7 +234,8 @@ section {
 
 #projects {
 	background-image:url("image/background-projects_3.jpg");
-	background-size: cover;
+	background-size: 100%, 100%;
+	margin-bottom: 20%;
 }
 .projRow {
 	text-align: center;
