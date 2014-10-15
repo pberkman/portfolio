@@ -98,7 +98,7 @@ section {
 
 #home {
 	background: url("image/background-home.jpg");
-	height: 100%;
+	background-size: 100%;
 	background-repeat: repeat;
 }
 
