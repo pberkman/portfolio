@@ -142,10 +142,9 @@ section {
 /*Styling for all profile HEADERS */
 .headerBox {
 	height:20%;
-	text-align: center;
 	font-family: 'Great Vibes', cursive;
 	font-size: 1.5em;
-	display:inline-block;
+	vertical-align: bottom;
 }
 .headerBox:hover {
 	cursor: pointer;
@@ -180,16 +179,26 @@ section {
 }
 
 /* Skills list*/
+#skills {
+	position: relative;
+
+}
+#skillsWrapper {
+	position: relative;
+	width:30%;
+	text-align: center;
+}
 .skillsInfo li {
-	display: inline-block;
+	list-style: none;
 	font-variant: small-caps;
 	font-size:1em;
+	display: inline-block;
 }
 .skillsInfo li:before { /* Yellow Bullets between skills */
 	display: inline-block;
     width: 8px;
     height: 8px;
-    margin: 0 2px 0 5px;
+    margin: 0 1px 0 3px;
     content: "";
     background: url("image/bullet.jpg") no-repeat 0 0;
     background-size: 100%;
