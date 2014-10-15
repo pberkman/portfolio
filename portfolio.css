@@ -233,7 +233,7 @@ section {
 /* ---PROJECT SECTION ---*/
 
 #projects {
-	height: 130%;
+	height: auto;
 	background-image:url("image/background-projects_3.jpg");
 	background-size: 100%, 100%;
 	background-repeat: repeat;
@@ -246,10 +246,10 @@ section {
 	background-color: #403D36;
 	border:2% ridge #403D36;
 	width:80%;
+	padding:2%;
 	margin:2% auto;
 }
 .projImage {
-	
 	width:95%;
 	height:95%;
 }
