@@ -132,19 +132,16 @@ section {
 	background-size: cover;
 
 }
-#skillsWrapper, #profileWrapper, #interestsWrapper, #learnWrapper {
-	display:inline-block;
-}
-.rows {
-	height:20%;
-}
+
 
 /*Styling for all profile HEADERS */
 .headerBox {
-	height:20%;
+	height:95px;
 	font-family: 'Great Vibes', cursive;
 	font-size: 1.5em;
-	vertical-align: bottom;
+	line-height: 100px;
+	display: inline-block;
+	margin-right:10px;
 }
 .headerBox:hover {
 	cursor: pointer;
@@ -158,31 +155,24 @@ section {
 	height:20%;
 }
 
-/* ---Row 2 ---*/
-
+---Row 2 ---
 .row2 {
-	left:80%;
+	position: relative;
+	width:100%;
 }
-#profileWrapper {
-	float: right;
+.profileWrapper {
+	width:85%;
 }
 .profileInfo {
 	display: none;
 	height: 20%;
-	width:60%;
-	font-size: 1em;
+	width:75%;
+	font-size: 0.5em;
 	text-align: center;
-	float: left;
-}
-#profile {
-	float: right;
 }
 
-/* Skills list*/
-#skills {
-	position: relative;
 
-}
+/* 
 #skillsWrapper {
 	position: relative;
 	width:30%;
@@ -195,42 +185,22 @@ section {
 	display: inline-block;
 }
 .skillsInfo li:before { /* Yellow Bullets between skills */
-	display: inline-block;
+/*	display: inline-block;
     width: 8px;
     height: 8px;
     margin: 0 1px 0 3px;
     content: "";
     background: url("image/bullet.jpg") no-repeat 0 0;
     background-size: 100%;
-}
+}*/
 
 /* ---Row 3 ---*/
 
-.row3 {
-	margin-left:40%;
-}
-#interestsWrapper {
-	width: 60%;
-}
-.interestInfo {
-	width:60%
-	font-size: 1em;
-	float:right;
-	text-align: center;
-}
+
 
 /* ---Row 4 ---*/
 
-.row4 {
-	width:80%;
-}
 
-.learnInfo {
-	width:60%;
-}
-#resume {
-	float:right;
-}
 
 /* --- Call me Patty area --- */
 .about-instruct {
