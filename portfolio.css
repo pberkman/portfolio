@@ -87,7 +87,6 @@ h1 {
 section {
 	height: 100%;
 	width:100%;
-
 	margin:0 auto;
 	font-family:'Pathway Gothic One', sans-serif;
 }
@@ -100,9 +99,7 @@ section {
 	text-align: center;
 	background: url("image/background-home.jpg");
 	background-size: cover;
-
 }
-
 #home h1 {
 	font-variant: small-caps;
 	/*margin:0 0 10px 30px;*/
@@ -110,13 +107,11 @@ section {
 }
 #home p {
 	font-size: 1em;
-	/*margin:0 0 10px 30px;*/
 }
 .ImageContainer {
-	width:40%;
-
+	width:50%;
 	margin:0 auto;
-
+	margin-top:5%;
 }
 .homePic  {
 	/*margin-right: 100px;*/
